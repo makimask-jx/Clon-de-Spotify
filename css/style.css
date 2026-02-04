@@ -10,15 +10,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background-colour);
     color: var(--text-colour);
+    background-color: var(--background-colour);
     font-family: var(--text-font);
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
 }
 
-#navar-spotify-icono {
-    height: 20px;
+nav img {
+    height: 30px;
     width: auto;
 }
