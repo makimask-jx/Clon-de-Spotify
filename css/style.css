@@ -442,6 +442,8 @@ section {
     gap: 16px;
 }
 
+/* Todo: Refactorizar. No seria completamente necesario hacerlo de esta manera */
+
 @media (min-width: 768px) {
     .card-grid {
         grid-template-columns: repeat(3, 1fr);
