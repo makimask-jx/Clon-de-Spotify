@@ -127,11 +127,9 @@ header {
     outline: none;
 }
 
-.search-input::placeholder {
-    color: var(--spotify-gris-claro);
-}
 
-.search-input:focus {
+.search-input:hover {
+    transition: 0.3s;
     outline: 2px solid var(--spotify-blanco);
 }
 
