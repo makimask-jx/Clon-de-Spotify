@@ -4,6 +4,10 @@
     --background-colour: #000100;
     --text-colour: #e1e1e0;
     --text-font: "Montserrat", sans-serif;
+    /* El color de la zona derecha donde estan las canciones */
+    --songs-colour: #212120;
+    /* El color de fondo de la sección de crear playlist y buscar podcast */
+    --sidebar-colour: #1f1f1f;
 }
 
 body {
