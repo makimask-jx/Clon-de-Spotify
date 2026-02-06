@@ -19,7 +19,7 @@
 body {
     background-color: var(--spotify-negro);
     color: var(--spotify-blanco);
-    font-family: 'Circular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -212,6 +212,29 @@ header {
     transform: scale(1.05);
 }
 
+.install-btn {
+    background-color: #000000;
+    color: var(--spotify-blanco);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.install-btn:hover {
+    transform: scale(1.05);
+}
+
+.install-btn .material-symbols-outlined {
+    font-size: 20px;
+}
+
 /* Diseño Principal */
 .main-container {
     flex: 1;
@@ -250,10 +273,11 @@ aside {
     display: flex;
     align-items: center;
     gap: 12px;
+    font-size: 16px;
     font-weight: bold;
     background: none;
     border: none;
-    color: var(--spotify-gris-claro);
+    color: var(--spotify-blanco);
     cursor: pointer;
     padding: 0 8px;
     transition: color 0.2s;
@@ -264,7 +288,7 @@ aside {
 }
 
 .create-btn {
-    background: none;
+    background: #2a2a2a;
     border: none;
     color: var(--spotify-gris-claro);
     cursor: pointer;
@@ -307,20 +331,21 @@ aside {
 }
 
 .promo-card h3 {
+    font-size: 14px;
     font-weight: bold;
     color: var(--spotify-blanco);
 }
 
 .promo-card p {
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .promo-card button {
     background-color: var(--spotify-blanco);
     color: var(--spotify-negro);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     width: fit-content;
     padding: 8px 16px;
@@ -373,7 +398,7 @@ aside {
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s;
@@ -402,18 +427,18 @@ main {
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .section-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .section-header h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -439,33 +464,45 @@ section {
 .card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 8px;
 }
 
 /* Todo: Refactorizar. No seria completamente necesario hacerlo de esta manera */
 
 @media (min-width: 768px) {
     .card-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
     .card-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
 @media (min-width: 1280px) {
     .card-grid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .card-grid {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media (min-width: 1600px) {
+    .card-grid {
+        grid-template-columns: repeat(8, 1fr);
     }
 }
 
 /* Tarjeta de Canción */
 .song-card {
     background-color: var(--spotify-gris-tarjeta);
-    padding: 16px;
+    padding: 6px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -479,7 +516,7 @@ section {
 .card-image-container {
     position: relative;
     aspect-ratio: 1;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
@@ -522,6 +559,7 @@ section {
 
 .card-title {
     font-weight: bold;
+    font-size: 14px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -531,7 +569,7 @@ section {
 
 .card-subtitle {
     color: var(--spotify-gris-claro);
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -575,7 +613,7 @@ section {
 /* Tarjeta de Artista */
 .artist-card {
     background-color: var(--spotify-gris-tarjeta);
-    padding: 16px;
+    padding: 6px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -587,7 +625,7 @@ section {
 
 .artist-image-container {
     aspect-ratio: 1;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     overflow: hidden;
     border-radius: 9999px;
@@ -602,6 +640,7 @@ section {
 
 .artist-name {
     font-weight: bold;
+    font-size: 14px;
     color: var(--spotify-blanco);
     white-space: nowrap;
     overflow: hidden;
@@ -611,7 +650,7 @@ section {
 
 .artist-label {
     color: var(--spotify-gris-claro);
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Banner Inferior */
