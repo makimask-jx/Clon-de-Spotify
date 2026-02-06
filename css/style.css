@@ -1,4 +1,4 @@
-/* Variables CSS */
+/* Variables CSS. Buena práctica */
 :root {
     --spotify-negro: #000000;
     --spotify-gris-oscuro: #121212;
@@ -9,7 +9,6 @@
     --spotify-verde: #1db954;
 }
 
-/* Estilos Base */
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +25,8 @@ body {
     overflow: hidden;
 }
 
-/* Iconos Material */
+/* Los iconos de google*/
+
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
@@ -35,7 +35,6 @@ body {
     font-variation-settings: 'FILL' 1;
 }
 
-/* Barra de Desplazamiento Personalizada */
 .custom-scrollbar::-webkit-scrollbar {
     width: 12px;
 }
@@ -48,7 +47,6 @@ body {
     background-color: hsla(0, 0%, 100%, 0.3);
 }
 
-/* Encabezado */
 header {
     height: 64px;
     display: flex;
