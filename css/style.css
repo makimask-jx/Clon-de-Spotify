@@ -411,7 +411,6 @@ aside {
     font-size: 20px;
 }
 
-/* Contenido Principal */
 main {
     flex: 1;
     background: linear-gradient(to bottom, #1a1a1a, var(--spotify-gris-oscuro));
@@ -465,7 +464,7 @@ section {
     gap: 8px;
 }
 
-/* Todo: Refactorizar. No seria completamente necesario hacerlo de esta manera */
+/* Todo: Refactorizar en fase 2. No seria completamente necesario hacerlo de esta manera */
 
 @media (min-width: 768px) {
     .card-grid {
@@ -497,7 +496,7 @@ section {
     }
 }
 
-/* Tarjeta de Canción */
+/* Tarjeta de cada canción */
 .song-card {
     background-color: var(--spotify-gris-tarjeta);
     padding: 6px;
@@ -608,7 +607,7 @@ section {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Tarjeta de Artista */
+/* Tarjeta de cada artista */
 .artist-card {
     background-color: var(--spotify-gris-tarjeta);
     padding: 6px;
@@ -651,7 +650,7 @@ section {
     font-size: 12px;
 }
 
-/* Banner Inferior */
+/* Banner Inferior. Donde te quieren sacar el dinero con la prueba gratis */
 .bottom-banner {
     margin: 0 8px 8px 8px;
     padding: 12px;
